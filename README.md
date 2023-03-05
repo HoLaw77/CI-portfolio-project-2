@@ -106,3 +106,7 @@ Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` f
 ---
 
 Happy coding!
+
+photo reference
+
+https://freesvg.org/rock-scissors-paper-game-depiction-vector-graphics
