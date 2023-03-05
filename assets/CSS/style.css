@@ -37,3 +37,15 @@ text-align: center;
         border-color: blue;
         color: blue;
     }
+
+    .btn--gray{
+      color: gray;
+      padding-top: 10px;
+    }
+
+    #Win{
+        color: green;
+    }
+    #lose{
+        color: red;
+    }
