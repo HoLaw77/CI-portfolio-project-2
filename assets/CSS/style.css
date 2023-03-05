@@ -7,3 +7,33 @@ text-align: center;
     height: 300px;
 }
 
+.gamer-area{
+    background-color: white;
+    background-size: 80%;
+}
+
+/* buttons*/
+.btn {
+    width: 220px;
+    height: 60px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: black;}
+
+    /*edit needed*/
+        .btn--big {
+        padding-top: 10px;
+        background-color: white;
+        border: 10px solid;
+        width: 100px;
+        height: 100px;
+        font-size: 3.2rem;
+        margin: 0 30px;
+        transition: all 0.5s;
+    }
+
+    .btn--blue {
+        border-color: blue;
+        color: blue;
+    }
