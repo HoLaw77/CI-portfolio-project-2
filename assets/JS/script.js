@@ -1,26 +1,17 @@
-// Wait for the DOM to finish loading before running the game
-// Get the button elements and add event listeners to them
+function runGame(){}
 
-document.addEventListener("DOMContentLoaded", function() {
-    let buttons = document.getElementsByTagName("button");
+function checkAnswer(){}
 
-    for (let button of buttons) {
-        button.addEventListener("click", function() {
-            if (this.getAttribute("data-type") === "submit") {
-                checkAnswer();
-            } else {
-                let gameType = this.getAttribute("data-type");
-                runGame(gameType);
-            }
-        });
-    }
+function calculateCorrectAnswer(){}
 
-    document.getElementById("answer-box").addEventListener("keydown", function(event) {
-        if (event.key === "Enter") {
-            checkAnswer();
-        }
-    });
+function incrementScore(){}
 
+function incrementDraw(){}
 
-});
+function incrementLoss(){}
 
+function displayWinQuestion(){}
+
+function displayDrawnQuestion(){}
+
+function displayLossQuestion(){}
