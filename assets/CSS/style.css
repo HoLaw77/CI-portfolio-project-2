@@ -22,7 +22,7 @@ text-align: center;
     color: black;}
 
     /*edit needed*/
-        .btn--big {
+      /*  .btn--big {
         padding-top: 10px;
         background-color: white;
         border: 10px solid;
@@ -41,7 +41,7 @@ text-align: center;
     .btn--gray{
       color: gray;
       padding-top: 10px;
-    }
+    }*/
 
     #Win{
         color: green;
