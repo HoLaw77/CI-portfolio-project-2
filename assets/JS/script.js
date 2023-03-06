@@ -11,9 +11,10 @@ function clearGame(){ alert ("You click restart.");}
 
 /*function for math random*/
 function generateMath(){let randomNumber = Math.floor(Math.random()* 3);
-  if (randomNumber === 1){computerChoice = "paper"};
-  if (randomNumber === 2){computerChoice = "scissors"};
-  if (randomNumber === 3){computerChoice = "rock"};
+  if (randomNumber === 1){return computerChoice = "paper"};
+  if (randomNumber === 2){return computerChoice = "scissors"};
+  if (randomNumber === 3){return computerChoice = "rock"};
+  let computerChoiceDisplay = getElementById("computer-action"); 
   computerChoice = computerChoiceDisplay.innerHTML;
 }
 
@@ -21,10 +22,7 @@ function gameResult(){
   if (playerChoice == computerChoice){ gameResult = "draw"} else
   if (playerChoice == "paper" && computerChoice == "scissors"){gameResult = "You lose."} else
   if (playerChoice == "paper" && computerChoice == "rock"){gameResult = "You Win."} else
-  if (playerChoice == "rock"  && computerChoice == "scissors"){gameResult = "You win."} else 
+  if (playerChoice == "rock"  && computerChoice == "scissors"){gameResult = "You win."}
+  let gameResultDisplay = document.getElementById("result"); 
   gameResult = gameResultDisplay.innerHTML; 
-}
-
-function printGameResult(){
-
 }
