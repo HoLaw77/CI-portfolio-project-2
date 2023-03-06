@@ -1,17 +1,41 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Rock Paper Scissors Tutorial</title>
-  </head>
-  <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Lato:wght@300&display=swap" rel="stylesheet">
+    <title>Paper Scissors Rock game</title>
+</head>
+<body>
+    <h1 class="heading">Paper Scissors Rock</h1> 
+    <img class= "logo" src="assets/Images/logo.png" alt="logo">
 
-    <h2>Computer Choice: <span id="computer-action"></span></h2>
-    <h2>Your Choice: <span id="player-action"></span></h2>
-    <h2>Result: <span id="game-result"></span></h2>
+    <div class="game-area">
+        <div class="control-area", id="player-action">
+        <h2>Give it a try!</h2>
 
-    <button id="rock">rock</button>
-    <button id="paper">paper</button>
-    <button id="scissors">scissors</button>
-  </body>
-  </html>
+      <button id="paper" class="btn btn--big btn--blue"> <i class="fa-regular fa-hand"></i></button>
+      <button id="Scissors" class="btn btn--big btn--blue"> <i class="fa-regular fa-hand-scissors"></i></button>
+      <button id="rock" class="btn btn--big btn--blue"> <i class="fa-regular fa-hand-back-fist"></i></button>
+    </div>
+    </div>
+
+    <div class="question-area">
+    <div>    
+        <h2>Computer's action<span id="computer-action"></span></h2>
+    </div>
+    <br>
+    <br>
+    <button data-type="submit" class="btn btn--gray">Restart</button> 
+    </div>
+    
+    <div class="score-area">
+        <h2>Result:<span id="result"> 0</span></h2>
+
+    </div>
+    <script src="https://kit.fontawesome.com/086085115e.js" crossorigin="anonymous"></script>
+    <script src="assets/JS/script.js"></script>
+</body>
+</html>
+
