@@ -15,7 +15,7 @@ function generateMath(){let randomNumber = Math.floor(Math.random()* 3);
   if (randomNumber === 1){computerChoice = "paper"};
   if (randomNumber === 2){computerChoice = "scissors"};
   if (randomNumber === 3){computerChoice = "rock"};
-  computerChoice == computerChoice.innerHTML;
+  
 }
 
 function gameResult(){
@@ -23,7 +23,7 @@ function gameResult(){
   if (playerChoice == "paper" || computerChoice == "scissors"){gameResult = "You lose."} else
   if (playerChoice == "paper" || computerChoice == "rock"){gameResult = "You Win."} else
   if (playerChoice == "rock"  || computerChoice == "scissors"){gameResult = "You win."} else
-  gameResult == document.getElementById("result").innerHTML
+  
 }
 
 function printGameResult(){
