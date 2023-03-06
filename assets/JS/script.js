@@ -2,8 +2,16 @@ let computerAction = document.getElementById("computer-action");
 let playAction = document.getElementById("player-action");
 let gameResult = document.getElementById("result");
 let gameChoices = document.getElementsByTagName("button");
+let userChoice
+let computerChoice
+let result
 
-document.addEventListener('Click', {function(){}} )
+gameChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
+    userChoice = e.target.id
+    userChoice.innerHTML = userChoice
+    computerAction()
+    computerResult()
+  }))
 
 function computerAction() {
     const randomNumber = Math.floor(Math.random() * 3) + 1
@@ -42,5 +50,5 @@ function computerAction() {
     if (computerAction === 'scissors' && userAction === "paper") {
       result = 'you lose!'
     }
-    resultDisplay.innerHTML = result
+    gameResult.innerHTML = result
   }
