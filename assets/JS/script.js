@@ -1,26 +1,5 @@
-function runGame(){}
+let computerAction = document.getElementById("computer-action");
+let playAction = document.getElementById("player-action");
+let gameResult = document.getElementById("result");
+let gameChoices = document.getElementsByTagName("button");
 
-function checkAnswer(){}
-
-function calculateCorrectAnswer(){}
-document.addEventListener("DOMContentLoaded" function(){}){
-    let buttons = document.getElementsByTagName("button");
-    for (let button of buttons){
-        button.addEventListener('click', function(){})
-        if(this.getAttribute("data-type") === "submit"){
-            alert("You clicked submit.")
-        }
-    }
-}
-
-function incrementScore(){}
-
-function incrementDraw(){}
-
-function incrementLoss(){}
-
-function displayWinQuestion(){}
-
-function displayDrawnQuestion(){}
-
-function displayLossQuestion(){}
