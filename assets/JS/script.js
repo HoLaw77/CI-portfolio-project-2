@@ -10,7 +10,6 @@ function clearGame(){ alert ("You click restart.");}
 
 
 
-
 /*function for math random*/
 function generateMath(){let randomNumber = Math.floor(Math.random()* 3) + 1;
   if (randomNumber === 1){return computerChoice = "paper"};
