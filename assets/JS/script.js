@@ -8,9 +8,19 @@ function scissorsChoice(){ playerChoice = "scissors"; alert ("You click scissors
 document.getElementById("restart").addEventListener('click', clearGame);
 function clearGame(){ alert ("You click restart.");}
 
+document.addEventListener("DOMContentLoaded", function(){ 
+  let buttons = document.getElementsByTagName("button");
+  for (let button of buttons) {button.addEventListener('click', function()
+  {if(this.getElementById === document.getElementById("paper") || document.getElementById("scissors") || document.getElementById("rock")){
+  generateMath();
+  gameResult();
+  }})}
+})
+
+
 
 /*function for math random*/
-function generateMath(){let randomNumber = Math.floor(Math.random()* 3);
+function generateMath(){let randomNumber = Math.floor(Math.random()* 3) + 1;
   if (randomNumber === 1){return computerChoice = "paper"};
   if (randomNumber === 2){return computerChoice = "scissors"};
   if (randomNumber === 3){return computerChoice = "rock"};
