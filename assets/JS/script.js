@@ -8,16 +8,6 @@ function scissorsChoice(){ playerChoice = "scissors"; alert ("You click scissors
 document.getElementById("restart").addEventListener('click', clearGame);
 function clearGame(){ alert ("You click restart.");}
 
-let playerChoice = document.getElementById("player-action")
-
-document.addEventListener("DOMContentLoaded", function(playerChoice){ 
-  let buttons = document.getElementsByTagName("button");
-  for (let button of buttons) {button.addEventListener('click', function()
-  {if(this.getElementById === document.getElementById("paper") || document.getElementById("scissors") || document.getElementById("rock")){
-  generateMath();
-  gameResult();
-  }})}
-})
 
 
 
