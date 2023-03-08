@@ -11,6 +11,13 @@ function scissorsChoice(){ playerChoice = "scissors"; alert ("You click scissors
 document.getElementById("restart").addEventListener('click', clearGame);
 function clearGame(){ alert ("You click restart.");}
 
+let button = document.getElementsByTagName("button");
+
+for(let buttons of button){buttons.addEventListener('click', function () {
+if (this.getAttribute("id") === "paper" || "scissors" || "rock"){generateMath(); gameResult()} else 
+if (this.getAttribute("id") === "restart"){restart();}
+}) }
+
 
 
 /*function for math random*/
