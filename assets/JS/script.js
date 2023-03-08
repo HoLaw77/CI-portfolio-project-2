@@ -1,19 +1,20 @@
 /*set variables for storing values*/
-let playerChoice = document.getElementById("player-action");
-let computerChoice = document.getElementById("computer-action");
-let gameResultDisplay = document.getElementById("result");
-let gameButtons = document.getElementsByClassName("btn");
+const playerChoice = document.getElementById("player-action");
+const computerChoice = document.getElementById("computer-action");
+const gameResultDisplay = document.getElementById("result");
+const gameButtons = document.getElementsByClassName("btn");
 let player;
 let computer;
 let result;
 
 
-gameButtons.forEach(buttons => {buttons.addEventListener('click', function () {
+gameButtons.forEach (buttons => {buttons.addEventListener('click', () => {
     player = buttons.textContent;
     generateMath();
     gameResult();
-    playerChoice.textContent = 'Your Choice: ${player}';
-    gameResultDisplay.textContent = gameResultDisplay.innerHTML;
+    playerChoice.textContent = `Your Choice: ${player}`;
+    computerChoice.textContent = `Computer action: ${computer}`;
+    gameResultDisplay.textContent = gameResult();
   })});
 /*event buttons testing using alert*/
 /*document.getElementById("paper").addEventListener('click', paperChoice);
